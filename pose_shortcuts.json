@@ -1,0 +1,12 @@
+{
+    "black-power": "osascript -e 'set volume output muted not (output muted of (get volume settings))'",
+    "gunfinger": "open https://www.youtube.com/watch?v=qzCHc9faIUM",
+    "peace": "open https://www.reddit.com",
+    "noirgate": "open https:/shellz.wtf",
+    "terminal": "osascript -e 'tell application \"iTerm\" to activate'",
+    "spotlight-search":" osascript -e 'tell application \"System Events\" to key code 49 using command down '" ,
+    "close-application": "osascript -e 'tell application \"System Events\" to key code 13 using command down'",
+    "up":"osascript -e 'set volume output volume (output volume of (get volume settings) + 5) --100%'",
+    "down":"osascript -e 'set volume output volume (output volume of (get volume settings) - 5) --100%'"
+  }    
+            

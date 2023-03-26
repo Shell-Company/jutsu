@@ -1,0 +1,12 @@
+
+{
+    "black-power": "osascript -e 'set volume output muted not (output muted of (get volume settings))'",
+    "gunfinger": "open https://www.youtube.com/watch?v=qzCHc9faIUM",
+    "up": "osascript -e \"set Volume 80\"  "   ,
+    "down": "osascript -e \"set Volume 20\"  "   ,
+    "peace": "open https://www.reddit.com",
+    "horns": "open https://www.youtube.com/watch?v=D-tjkwZ32MA",
+    "okay": "osascript -e 'tell application \"iTerm\" to activate'",
+    "shocker": "open https://www.youtube.com/watch?v=4tvuKOxzn48"
+    }
+    

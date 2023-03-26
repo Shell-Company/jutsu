@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jutsu"
+version = "0.1.0"
+description = "keyboard bindings for hand positions"
+authors = ["life"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.7.0.72"
+numpy = "^1.24.2"
+
+[tool.poetry.extras]
+mediapipe-m1 = ["mediapipe-silicon"]
+mediapipe-intel = ["mediapipe"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
