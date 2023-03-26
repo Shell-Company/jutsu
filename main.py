@@ -256,13 +256,15 @@ def calculate_pose_ratio(hand_landmarks):
 
 # function to save and record poses to an array for comparison later
 def save_pose(poseRatio):
+  global gesturesDir
   # save the pose, to be labeled later
   save_pose_index = input("Save pose? (y/n): ")
   #  write pose to a file with a label, replace spaces with underscores
   if (save_pose_index == "y"):
     label = input("Label: ")
     label = label.replace(" ", "_")
-    with open(("pose_"+label + ".pkl"), "wb") as f:
+    
+    with open(os.path.join(gesturesDir, "pose_"+label + ".pkl"), "wb") as f:
         pickle.dump(poseRatio, f)
     print("Saved pose: " + label)
   else:
