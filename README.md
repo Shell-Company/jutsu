@@ -36,9 +36,10 @@ brew install espeak || sudo apt install espeak
 ```
 
 2. Install the requirements
-```
-poetry install
-```
+
+Standard Installation:  `poetry add mediapipe && poetry install`
+
+Apple Silicon Installation: `poetry add mediapipe-silicon && poetry install`
 
 3. Run the main.py file
 ```
