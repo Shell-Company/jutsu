@@ -1,7 +1,7 @@
 {
     "mute": "osascript -e 'set volume output muted not (output muted of (get volume settings))'",
     "gunfinger": "open https://news.ycombinator.com/",
-    "peace": "open https://www.reddit.com",
+    "peace": "open https://www.github.com",
     "noirgate": "open https:/shellz.wtf",
     "terminal": "osascript -e 'tell application \"iTerm\" to activate'",
     "chrome": "osascript -e 'tell application \"Chrome\" to activate'",

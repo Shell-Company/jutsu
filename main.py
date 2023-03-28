@@ -17,10 +17,12 @@ firstRun = True
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--tolerance",default=0.03, help="tolerance for pose ratio")
 parser.add_argument("-c", "--config", default="pose_shortcuts.json",help="path to json file with shortcuts")
+parser.add_argument("-s", "--silent", action="store_true", help="silent mode")
 args = parser.parse_args()
 
 tolerance = float(args.tolerance)
 shortcutFile = args.config
+silentMode = args.silent
 
 
 
@@ -234,7 +236,8 @@ def calculate_pose_ratio(hand_landmarks):
               lastSpokenPose = ""
               if (stripped_filename != lastSpokenPose):
                 lastSpokenPose = stripped_filename
-                os.system("espeak -v en-us -s 150 " + stripped_filename+ " &")
+                if (silentMode == False):
+                  os.system("espeak -v en-us -s 150 " + stripped_filename+ " &")
                 # if shortcut file exists, run it
                 shortcut_json= json.load(open(shortcutFile))
                 # pose is in dictionary     
