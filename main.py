@@ -291,6 +291,8 @@ with mp_hands.Hands(
     success, image = cap.read()
     if not success:
       print("Ignoring empty camera frame.")
+      # attempt to re-open the camera
+      cap = cv2.VideoCapture(0)
       # If loading a video, use 'break' instead of 'continue'.
       continue
 
